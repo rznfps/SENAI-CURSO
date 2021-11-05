@@ -27,7 +27,7 @@ do{
             dataPartes = strData.split("/");
             data = new Date(dataPartes[2], dataPartes[1] - 1, dataPartes[0]);
             if(data < new Date()){
-                console.log("Desculpe, o evento ja passou.");
+                console.log("Desculpe, o evento ja acabou!.");
             } else {
                 insEvento = readlinesync.question("Digite o nome do evento: ");
                 evento.push(insEvento);
@@ -50,7 +50,7 @@ do{
                 if(idade>=18){
                     listaparticipantes.push(participante);
                 } else {
-                    console.log("Evento não permitido para menores de 18!");
+                    console.log("Evento não qualificado para menores de 18!");
             }} else{
                 console.log("Evento Cheio !");
             }
@@ -77,7 +77,7 @@ do{
                 }
             break;
         case '0':
-            console.log("\tObrigado por acessar o sitema!");
+            console.log("\tObrigado por acessar o nosso sitema!");
             break;
         default:
             console.log();
