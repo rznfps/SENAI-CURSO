@@ -1,7 +1,7 @@
 'use strict';
 var readlinesync = require("readline-sync");
 
-const alunos = readlinesync.question("\t Digite o numero de alunos: ");
+const alunos = readlinesync.question("\t Digite o numero de alunos aqui: ");
 
 if (alunos == 0) {
     console.log("numero é zero.");
